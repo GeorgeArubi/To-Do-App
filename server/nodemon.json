@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "arubigeorge@gmail.com",
+        "MONGO_PASSWORD": "beforeMyEarsExplode",
+        "MONGO_DB": "to-do"
+    }
+}
