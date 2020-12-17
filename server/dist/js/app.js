@@ -8,7 +8,6 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const cors_1 = __importDefault(require("cors"));
 const routes_1 = __importDefault(require("./routes"));
 const app = express_1.default();
-app.disable("x-powered-by");
 const PORT = process.env.PORT || 4000;
 app.use(cors_1.default());
 app.use(routes_1.default);

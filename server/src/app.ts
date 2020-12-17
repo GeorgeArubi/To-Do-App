@@ -4,7 +4,6 @@ import cors from "cors"
 import todoRoutes from "./routes"
 
 const app: Express = express()
-app.disable("x-powered-by")
 
 const PORT: string | number = process.env.PORT || 4000
 

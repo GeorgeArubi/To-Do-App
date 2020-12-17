@@ -12,8 +12,8 @@ const App: React.FC = () => {
 
   const fetchTodos = (): void => {
     getTodos()
-      .then(({ data: { todos }}: ITodo[] | any) => setTodos(todos))
-      .catch((err: Error) => console.log(err))
+    .then(({ data: { todos } }: ITodo[] | any) => setTodos(todos))
+    .catch((err: Error) => console.log(err))
   }
 
   const handleSaveTodo = (e: React.FormEvent, formData: ITodo): void => {
