@@ -1,6 +1,6 @@
 import React from "react"
 
-type Props = Todo & {
+type Props = TodoProps & {
     updateTodo: (todo: ITodo) => void
     deleteTodo: (_id: string) => void
 }
