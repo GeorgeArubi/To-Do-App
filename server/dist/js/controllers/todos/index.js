@@ -34,9 +34,7 @@ const addTodo = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         });
         const newTodo = yield todo.save();
         const allTodos = yield todo_1.default.find();
-        res
-            .status(201)
-            .json({ message: "Todo added", todo: newTodo, todos: allTodos });
+        res.status(201).json({ message: "Todo added", todo: newTodo, todos: allTodos });
     }
     catch (error) {
         throw error;
@@ -66,7 +64,7 @@ const deleteTodo = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         res.status(200).json({
             message: "Todo deleted",
             todo: deleteTodo,
-            todos: allTodos
+            todos: allTodos,
         });
     }
     catch (error) {
