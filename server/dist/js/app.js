@@ -11,7 +11,7 @@ const app = express_1.default();
 const PORT = process.env.PORT || 4000;
 app.use(cors_1.default());
 app.use(routes_1.default);
-const uri = `mongodeb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@to-do.ufsgj.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@to-do.ufsgj.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose_1.default.set("useFindAndModify", false);
 mongoose_1.default
