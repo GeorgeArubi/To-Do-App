@@ -24,10 +24,7 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
         const newTodo: ITodo = await todo.save()
         const allTodos: ITodo[] = await Todo.find()
 
-        res
-            .status(201)
-            .json({ message: "Todo added", todo: newTodo, todos: allTodos})
-
+        res.status(201).json({ message: "Todo added", todo: newTodo, todos: allTodos})
     } catch (error) {
       throw error  
     }
@@ -63,7 +60,7 @@ const deleteTodo = async (req: Request, res: Response): Promise<void> => {
         res.status(200).json({
             message: "Todo deleted",
             todo: deleteTodo,
-            todos: allTodos
+            todos: allTodos,
         })
     } catch (error) {
       throw error  
