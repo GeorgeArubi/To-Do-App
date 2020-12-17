@@ -1,7 +1,7 @@
 {
     "env": {
-        "MONGO_USER": "arubigeorge@gmail.com",
-        "MONGO_PASSWORD": "beforeMyEarsExplode",
-        "MONGO_DB": "to-do"
+        "MONGO_USER": "DOGHOUSETV",
+        "MONGO_PASSWORD": "BGsta1tvr0zIKZeZ",
+        "MONGO_DB": "to-do-app"
     }
 }
